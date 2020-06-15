@@ -29,6 +29,16 @@
                 var numberOne = document.forms.inputs.numberOne.value;
                 var numberTwo = document.forms.inputs.numberTwo.value;
                 document.forms.inputs.result.value = parseInt(numberOne) - parseInt(numberTwo);
+            },
+            multiplyNumbers: function () {
+                var numberOne = document.forms.inputs.numberOne.value;
+                var numberTwo = document.forms.inputs.numberTwo.value;
+                document.forms.inputs.result.value = parseInt(numberOne) * parseInt(numberTwo);
+            },
+            divideNumbers: function () {
+                var numberOne = document.forms.inputs.numberOne.value;
+                var numberTwo = document.forms.inputs.numberTwo.value;
+                document.forms.inputs.result.value = parseInt(numberOne) / parseInt(numberTwo);
             }
         }
 
@@ -56,6 +66,8 @@
             <div>
                 <button type="button" class="btn btn-primary element-spacer" onclick="calculator.addNumbers()" >Add</button>
                 <button type="button" class="btn btn-primary element-spacer" onclick="calculator.subtractNumbers()">Substract</button>
+                <button type="button" class="btn btn-primary element-spacer" onclick="calculator.multiplyNumbers()" >Multiply</button>
+                <button type="button" class="btn btn-primary element-spacer" onclick="calculator.divideNumbers()" >Divide</button>
             </div>
             <div>
                 <input name="result" value="0" class="form-control element-spacer" disabled />
